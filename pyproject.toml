@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "GithubStat"
+version = "1.2"
+description = "A Simple Github User Statistics Meter based on Github-API."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [
+  { name = "Ryougaa", email = "trytoloveurself@gmail.com" }
+]
+urls = { 
+  "Homepage" = "https://github.com/n1k4xryougaaa/GithubStat"
+}
+dependencies = [
+  "requests >=2.25.0",
+  "six >=1.13.0"
+]
+requires-python = ">=3.6"
+
+[project.scripts]
+GithubStat = "GithubStat.__init__:main"
+githubstat = "GithubStat.__init__:main"
+Gitstat = "GithubStat.__init__:main"
+gitstat = "GithubStat.__init__:main"
